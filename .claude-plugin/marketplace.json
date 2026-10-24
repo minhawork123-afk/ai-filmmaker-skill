@@ -1,0 +1,15 @@
+{
+  "name": "faizan-film-labs",
+  "description": "AI filmmaking skills by Faizan Film Labs.",
+  "owner": {
+    "name": "Fazi — Faizan Film Labs",
+    "url": "https://faizanfilmlabs.online"
+  },
+  "plugins": [
+    {
+      "name": "ai-filmmaker",
+      "source": "./",
+      "description": "Director, cinematographer, editor and prompt engineer for realistic AI video. Runs a tested 7-stage brief-to-edit workflow with copy-ready Seedance and Nano Banana prompts."
+    }
+  ]
+}

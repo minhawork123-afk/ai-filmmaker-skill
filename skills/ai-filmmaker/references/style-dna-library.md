@@ -1,0 +1,118 @@
+# Style DNA Library
+
+The Style DNA is the visual signature of a project: written once, locked in the Production Bible, and pasted **byte-identical** as the last section of every video block [Tested]. Never reword it between blocks, not even a synonym.
+
+## The structure [Tested]
+
+```
+Style DNA:
+Shot on [camera body] with [anamorphic / spherical] prime lenses. [Camera movement style]. Photoreal live-action cinematography, no stylisation. [Key light source, named]. [Colour palette in specifics: shadows, midtones, highlights]. [Persistent atmosphere: weather, haze, lens effects]. [Frame rate]fps, 180-degree shutter, [grain], [depth of field]. [Tone words from the brief].
+```
+
+Rules:
+- Mechanisms only, except the final tone line (up to three words from the brief), which is the one place a mood is allowed.
+- Keep it under about 90 words. Detail that changes per shot belongs in the shots, not the DNA.
+- **Only what's constant for the whole film goes in.** Because the DNA is pasted into every block, everything in it applies everywhere. Weather and atmosphere belong in it only if the whole film shares them (the tested bleak-exterior preset is one continuous storm). If the light or weather changes between scenes (night storm → calm dawn, apartment → gym), leave them out of the DNA and state them in each block's conditions line and in the plates.
+- **Movement slot = the rule plus its exception** when shots mix styles: "Handheld with subtle micro-shake unless a shot specifies locked-off." A flat "handheld" in the DNA contradicts every locked-off shot.
+- Draft it in Bible v1 so the sheets and plates match the look (the same camera body, palette and grain). Lock it before the first video block.
+
+```text
+WEAK    Style DNA: dark, moody, cinematic, high quality, realistic.
+STRONG  Style DNA: Shot on ARRI Alexa 35 with spherical primes. Locked-off. Single tungsten practical key, deep shadow…
+WHY     Every slot is a mechanism the model can reproduce identically in every block.
+```
+
+## How to choose and adapt
+
+1. Pick the preset closest to the brief's tone and the playbook.
+2. Swap slots to fit the project (body, movement, key light, palette, atmosphere, tone words). Don't stack two presets.
+3. Write it into the Bible under `STYLE DNA (LOCKED)`, then re-print the Bible.
+4. Tell the user whether the preset is [Tested] or [General best practice].
+
+---
+
+## Tested presets (from the source workflow)
+
+### 1. Bleak exterior — cinematic [Tested]
+For survival, horror and dread exteriors, and rain or forest.
+```
+Style DNA:
+Shot on ARRI Alexa 35 with anamorphic prime lenses. Handheld with subtle micro-shake. Photoreal live-action cinematography, no stylisation. Flat overcast key light, cold blue-grey ambience, deep crushed blacks, desaturated teal-green palette. Heavy continuous rain, volumetric mist between trunks, water beading on the lens. 24fps, 180-degree shutter, fine 35mm grain, shallow depth of field. Bleak, hopeless, oppressive.
+```
+
+### 2. Polished creator — persona [Tested]
+For aspirational lifestyle and influencer content that's still handheld and human.
+```
+Style DNA:
+Shot on Sony A7S III with a 35mm prime lens. Genuine handheld feel throughout — natural human hand tremor, small organic drifts and micro-adjustments in framing, not a locked tripod shot. Photoreal, not a digital render, not a 3D visualization. Warm amber shadows, cool blue-grey midtones, controlled highlights that never blow out, Kodak Vision3 250D character, subtle 35mm grain, soft halation around the practical light source. 30fps, real skin texture throughout, no beauty filter.
+```
+
+### 3. Raw phone UGC [Tested]
+For reviews, testimonials and UGC ads, or anything that must look self-filmed.
+```
+Style DNA:
+Shot on a recent smartphone. HDR, mild digital over-sharpening on edges, visible luminance noise in dim areas, slight rolling shutter on pans, clipped highlights near windows. Flat and ungraded. Genuine handheld feel throughout — natural human hand tremor, small organic drifts and micro-adjustments, slightly crooked horizons. Never a tripod, never a gimbal, never slow motion. Real room tone. No music. No film grain, no halation, no cinematic grade.
+```
+Adapting it: if the project mixes handheld and propped-phone shots, change "Genuine handheld feel throughout" to "Handheld or propped on a surface — real hand tremor when held, static but slightly crooked when propped", then lock it.
+
+### 4. Clean industrial — car / product [Tested]
+For cars, tech, metal and controlled premium spots.
+```
+Style DNA:
+Shot on ARRI Alexa 35 with spherical prime lenses. Smooth controlled dolly movement. Photoreal live-action cinematography, no stylisation. Hard directional key light from camera-right, cool blue-grey fill, deep blacks, desaturated steel and graphite palette. 24fps, 180-degree shutter, fine 35mm grain, shallow depth of field on inserts, deep focus on wides. Cold, precise, controlled.
+```
+
+---
+
+## General best-practice presets (not tested in this workflow)
+
+### 5. Neo-noir night city [General best practice]
+For thrillers, music videos and night chases.
+```
+Style DNA:
+Shot on ARRI Alexa 35 with anamorphic prime lenses. Slow tracking moves and locked-off frames. Photoreal live-action cinematography, no stylisation. Practical neon signs and sodium-vapour streetlights as the only sources, magenta and cyan pools on wet asphalt, deep blacks, orange highlights against cyan shadows. Light rain, reflections in every surface, soft horizontal lens flares. 24fps, 180-degree shutter, fine 35mm grain, shallow depth of field. Lonely, electric, tense.
+```
+
+### 6. Warm 16mm nostalgia [General best practice]
+For memories, coming-of-age stories, family stories and summer.
+```
+Style DNA:
+Shot on 16mm film with vintage spherical primes. Handheld, gentle drifting movement. Photoreal live-action footage, no stylisation. Low golden-hour sun from behind the subject as the key, warm bounce fill. Lifted milky blacks, golden midtones, soft halation on highlights, slightly faded greens. Dust in the light, occasional soft lens flare. 24fps, 180-degree shutter, visible 16mm grain and gentle gate weave, shallow depth of field. Tender, sunlit, fleeting.
+```
+
+### 7. Single-source horror [General best practice]
+For horror teasers, suspense and found-footage-adjacent work.
+```
+Style DNA:
+Shot on ARRI Alexa 35 with spherical prime lenses. Slow, locked-off frames and creeping push-ins. Photoreal live-action cinematography, no stylisation. One small practical source per shot — a phone screen, torch or bare bulb — everything else falling to near-black, faint cold moonlight through windows. Desaturated cold palette, crushed blacks, skin slightly sallow. Still air, faint dust in the beam. 24fps, 180-degree shutter, fine 35mm grain, shallow depth of field. Quiet, wrong, dreadful.
+```
+
+### 8. Luxury product macro [General best practice]
+For beauty, jewellery, fragrance and watches.
+```
+Style DNA:
+Shot on ARRI Alexa 35 with a 100mm macro and spherical primes. Slow slider and motion-control moves. Photoreal live-action product cinematography, no stylisation, NOT a 3D render. Large soft top light with black flags for contrast, thin edge lights tracing contours, small controlled specular highlights. Neutral whites, rich deep blacks, true-to-life product colour. Fine mist or droplets on surfaces where specified. 24fps, 180-degree shutter, very fine grain, extremely shallow depth of field on details. Precise, sensual, quiet.
+```
+
+### 9. Sunlit lifestyle — food and drink [General best practice]
+For cafés, kitchens, drinks and summer brands.
+```
+Style DNA:
+Shot on ARRI Alexa 35 with spherical prime lenses. Handheld, light and steady. Photoreal live-action cinematography, no stylisation. Natural window daylight from camera-left as the key, warm bounce from a wooden table, backlight catching steam and condensation. Fresh natural colour, warm highlights, clean whites, soft contrast. 24fps, 180-degree shutter, fine grain, shallow depth of field. Fresh, warm, easy.
+```
+
+### 10. Documentary naturalism [General best practice]
+For brand documentaries, behind-the-scenes, social realism and explainers with people.
+```
+Style DNA:
+Shot on Sony FX6 with a 24–70mm zoom. Handheld observational camera, small reframes and focus pulls as if following real events. Photoreal, NOT a digital render. Available light only — windows, overheads, practicals — slightly uneven exposure. Natural colour with neutral white balance, gentle contrast, highlights allowed to clip a little. 25fps, 180-degree shutter, light digital noise, mixed depth of field. Honest, close, unpolished.
+```
+
+## Style DNA checks
+
+- [ ] One preset adapted, not two stacked.
+- [ ] Every slot is a mechanism; only the final tone line holds moods.
+- [ ] Only film-wide constants are in the DNA; scene-specific light and weather are in each block.
+- [ ] Mixed movement styles are written as a rule plus an exception.
+- [ ] It's locked in the Bible and pasted byte-identical into every block.
+- [ ] Its label ([Tested] or [General best practice]) was told to the user.

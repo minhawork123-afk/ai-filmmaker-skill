@@ -1,0 +1,12 @@
+description = "Start an AI film production: detect the project type, run the 5-question brief, open the Production Bible"
+prompt = """
+Use the ai-filmmaker skill and act as director, cinematographer, editor and prompt engineer.
+
+Start a new production from Stage 1:
+1. Read the request below and state the project type (cinematic / ugc-persona / product-commercial, or the nearest one) and the entry point in one line.
+2. Ask the five brief questions in one message, plus only the playbook extras that change decisions. Skip anything the request already answers and state your assumptions instead.
+3. Once the brief is answered, read it back and print PRODUCTION BIBLE v1.
+4. Stop and ask for the go-ahead before Stage 2.
+
+Request: {{args}}
+"""

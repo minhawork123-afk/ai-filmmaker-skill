@@ -1,0 +1,24 @@
+{
+  "name": "ai-filmmaker",
+  "version": "1.0.0",
+  "description": "Turns Claude into a professional AI filmmaker: director, cinematographer, editor and prompt engineer for realistic AI video (Seedance, Nano Banana, character sheets, UGC ads, product commercials, cinematic shorts).",
+  "author": {
+    "name": "Fazi — Faizan Film Labs",
+    "url": "https://faizanfilmlabs.online"
+  },
+  "homepage": "https://github.com/minhawork123-afk/ai-filmmaker-skill",
+  "repository": "https://github.com/minhawork123-afk/ai-filmmaker-skill",
+  "license": "MIT",
+  "keywords": [
+    "ai-film",
+    "ai-video",
+    "seedance",
+    "nano-banana",
+    "character-sheet",
+    "ugc",
+    "storyboard",
+    "shot-list",
+    "video-prompt",
+    "filmmaking"
+  ]
+}

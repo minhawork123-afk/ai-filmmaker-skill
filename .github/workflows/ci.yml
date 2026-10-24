@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Skill and manifest checks
+        run: python3 build/check_skill.py
+
+      - name: Agent Skills spec validation (skills-ref)
+        run: |
+          pip install --quiet "git+https://github.com/agentskills/agentskills#subdirectory=skills-ref"
+          skills-ref validate skills/ai-filmmaker
+
+      - name: Validator tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Portable files are up to date
+        run: python3 build/build_portable.py --check
+
+      - name: Package builds
+        run: bash build/package_skill.sh
