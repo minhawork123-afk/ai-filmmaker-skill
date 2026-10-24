@@ -65,7 +65,8 @@ Use the same pipeline and change these levers.
 - Describe the threat by what the camera sees ("a shape stands at the end of the hall, unmoving, backlit, no visible face"), never "scary" or "creepy".
 
 ### Music video moment
-- **The edit is cut to the track.** Ask for the BPM, or the timestamps of downbeats and drops. Shot durations follow bars: at 120 BPM one bar is 2 s, so 2/4/2/4 s patterns land on the beat.
+- **The edit is cut to the track.** Ask for the BPM, or the timestamps of downbeats and drops. Shot durations follow bars: one bar of 4/4 = 240 ÷ BPM seconds (120 BPM → 2 s, 100 BPM → 2.4 s), so cut points land on bar lines.
+- **Whole-second blocks.** Bar lengths rarely add up to whole seconds (8 bars at 100 BPM = 19.2 s). If the generation duration only takes whole seconds, round the block up (20 s), put the internal cuts on bar lines, and let the final shot absorb the remainder. Trim it to the bar in the edit.
 - **Performance vs narrative.** Lip-syncing to an existing song depends on what the platform supports; this workflow has not tested it. The safe default is non-lip-sync performance (moving, looking, playing an instrument with the hands in frame) and syncing in the edit. If the user's platform accepts an audio reference, suggest a short test first.
 - Generate with native audio turned off or ignored, since the song goes on in the edit. Keep `Audio:` lines minimal ("no dialogue, no music") to avoid a competing score.
 - A bold single-light or coloured-practical look is common. Keep it physically motivated (a neon sign, stage lights, car headlights).

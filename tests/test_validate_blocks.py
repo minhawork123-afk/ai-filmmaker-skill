@@ -201,5 +201,20 @@ class Cli(unittest.TestCase):
             self.assertEqual(vb.main([good, "--json"]), 0)
 
 
+
+class SelfTestFixtures(unittest.TestCase):
+    """Block prompts produced while self-testing the skill (UGC, cinematic, music video)
+    must stay clean: they are what the skill's own formats should produce."""
+
+    def test_fixtures_are_clean(self):
+        fixtures = sorted((ROOT / "tests" / "fixtures").glob("selftest-*.md"))
+        self.assertGreaterEqual(len(fixtures), 3)
+        for path in fixtures:
+            report, summary = vb.validate(path.read_text(encoding="utf-8"))
+            bad = [f for f in report.findings if f["level"] in ("ERROR", "WARN")]
+            self.assertEqual(bad, [], "%s: %s" % (path.name, bad))
+            self.assertTrue(summary["dna_identical"], path.name)
+
+
 if __name__ == "__main__":
     unittest.main()

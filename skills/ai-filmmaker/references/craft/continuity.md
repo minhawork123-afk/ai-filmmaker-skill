@@ -41,6 +41,11 @@ Then the next block starts from that end state.
 1. End each block on a described, stable frame: "END ON THIS FRAME — [pose, position in frame, wardrobe state, light]".
 2. After generating, save that frame as a still.
 3. Attach it as the last slot of the next block, and open that block with: "This clip picks up seconds after the previous one."
+4. At a **scene change** (a new location or a time jump), the last frame shows the wrong setting. Leave it out, or attach it for the character's face and wardrobe only and name the new plate as the setting [General best practice, untested].
+
+## Same place, different light
+
+If a location changes time of day or lighting state (lamp on → lamp off, night → morning), generate a **separate plate for each lighting state** and give each its own @Image slot [General best practice]. The plate's light becomes the video's light, so one night plate can't be asked to play morning.
 
 ## Screen direction and geography
 

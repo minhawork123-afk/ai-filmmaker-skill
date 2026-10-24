@@ -35,7 +35,7 @@ Format:           9:16 | 16:9 · total __ s · platform
 Assumptions:      (everything you decided for the user)
 ```
 
-Then print `PRODUCTION BIBLE · v1`, in the format given in SKILL.md.
+Then print `PRODUCTION BIBLE · v1`, in the format given in SKILL.md, including a drafted Style DNA (from `style-dna-library.md`), so the Stage 3 sheets and plates are written in the same look.
 
 **Checks**
 - Total length fits whole blocks (12–20 s each, 30 s max) [Tested]. A 30 s piece is usually 2 × 15 s.
@@ -86,12 +86,14 @@ Load `craft/story-structure.md` for structure by format and length, and `craft/d
 
 **Goal:** lock every identity and every space before any video [Tested]. This is the most important stage.
 
+First, list every character, product, setting and lighting state the script uses. Each one gets a reference image, so none is invented during video.
+
 Order of prompts [Tested]:
 1. **Portrait** (4:5), one per character. Get the face right here first.
 2. **Character sheet** (16:9), using the approved portrait as a reference. Exactly one full face; the centre panel is headless.
 3. **Skin realism pass**, only if the sheet looks airbrushed.
 4. **Product reference** (16:9), one per hero product [pattern is General best practice].
-5. **Location plate**, one per setting, no people.
+5. **Location plate**, one per setting (and one per lighting state if the light changes), no people.
 
 Use the output formats in `translation/image-prompts.md`. Each prompt goes in its own code block, with a label line: `Nano Banana Pro · 4:5 · becomes portrait for @Image1 sheet`.
 

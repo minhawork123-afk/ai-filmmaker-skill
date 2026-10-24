@@ -12,6 +12,7 @@ These images exist to **lock** identity and space before any video [Tested]. Eve
 - **Always include a realism clause and a camera** [Tested]: a real body and lens, "visible skin texture and pores, no retouching", "NOT a digital render, NOT a 3D visualisation".
 - **Original characters**: add "Original character, not resembling any existing person or public figure" unless the user supplied real photos of a person who has consented.
 - Remove every `[bracket]`, and delete optional lines that don't apply.
+- **Reference sheets always use the studio format** (mid-grey seamless, ARRI Alexa 35, 85mm, softbox), whatever the project's look. Even a phone-shot UGC persona was built from a studio sheet [Tested]. The look comes from the plates and the Style DNA, not the sheet.
 
 ```text
 WEAK    A beautiful young woman with perfect skin and nice hair.
@@ -183,6 +184,8 @@ WHY     Objects with frame positions and a named light become a set the video ca
 **Phone-look plates** [Tested]: say "real phone photo", ask for an under-lit room, mild noise in the shadows and mismatched practical light, and put "no film grain, no halation, no cinematic colour grade, no even or flattering lighting" in the NEGATIVE.
 
 **Two plates for one space** [Tested pattern]: a wide establishing plate for arrivals, and a tighter plate of the exact corner where the action happens.
+
+**One plate per lighting state** [General best practice]: if the same place appears at night and in the morning, or with the lamp on and off, generate a plate for each. Match their camera position and key elements so only the light changes.
 
 ## Image-prompt checks
 

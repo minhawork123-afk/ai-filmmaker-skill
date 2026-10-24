@@ -24,7 +24,7 @@ WHY     Varying lengths create acceleration and a landing; equal lengths drone.
 | Even observational | 4 / 4 / 3 / 4 | UGC, documentary |
 | Beat-locked (120 BPM) | 4 / 2 / 2 / 4 / 3 | music video, bars of 2 s |
 
-Music videos: at BPM *b*, one bar of 4/4 = 240 ÷ *b* seconds (120 BPM → 2 s, 90 BPM → 2.67 s). Cut on downbeats; save the longest hold for the drop.
+Music videos: at BPM *b*, one bar of 4/4 = 240 ÷ *b* seconds (120 BPM → 2 s, 90 BPM → 2.67 s). Cut on downbeats; save the longest hold for the drop. If the bars don't make a whole number of seconds, round the block up, keep the internal cuts on bar lines, and let the last shot absorb the remainder for trimming.
 
 ## Cut on action [Tested]
 

@@ -40,6 +40,7 @@ WHY     Camera → subject → action → atmosphere, in sentences, with a tag a
 - Products: *"@Image2 — the [product]. Match exactly: [shape, colour, finish, label]."* [Tested]
 - Locations: *"@Image3 — [space]. Match the [light source], palette and contrast exactly."* [Tested]
 - Blocks 2+: *"@Image[N] — final frame of Block [N-1]. Continue from it exactly."* [Tested]
+- **Scene change** (a new location or a time jump) [General best practice, untested]: the last frame no longer shows the right setting and can drag the old set into the new scene. Either leave it out, or attach it for identity only: *"@Image[N] — final frame of Block [N-1], for @Image1's face and wardrobe only; the setting is now @Image3."* Within a continuous scene, always attach it [Tested].
 
 ```text
 WEAK    Use the reference images for the characters and the place.
@@ -62,6 +63,8 @@ If the look drifts toward CGI, add to the block: *"This must read as actual foot
 ---
 
 ## Output format A — standard block (cinematic, product, drama) [Tested]
+
+The slot numbers below are an example. Use the Bible's @Image map: characters → products → locations → last frame, with no gaps.
 
 Label line: `Seedance 2.5 · omni_reference · [9:16 | 16:9] · Block [N] of [T] · upload @Image1–[K] in order`
 
@@ -116,6 +119,7 @@ PERFORMANCE: [energy as behaviour — e.g. low energy, underselling, talking to 
 0–[X]s · [BEAT]. [Camera setup]. [Name] @Image1 [action]. [She/He] says, [delivery]: "[line]". [Pause or beat.]
 [X]–[Y]s · [BEAT]. Cut. [Camera]. [Hands-only insert / action]. Voiceover, no lip sync: "[line]". [Sounds of the action.]
 [...]
+[Not the final block: END ON THIS FRAME — [pose, frame position, wardrobe state, light].]
 
 VOICE: [voice spec — identical in every block].
 AUDIO: [room tone, action sounds, mic character]. No music.
@@ -126,6 +130,17 @@ Style DNA:
 ```
 
 ---
+
+## Text-only mode — no reference images [General best practice, untested]
+
+Use this when the user can't or won't make reference images. Warn once that identity and location will drift more than with references.
+- Write a **CHARACTER LOCK** line per person (age, face specifics, hair, build, wardrobe, one distinguishing mark with its side) and a **LOCATION LOCK** line per setting. Keep them in the Bible and paste them byte-identical into every block, exactly like the Style DNA.
+- Drop the @Image declarations and the face-source line. Refer to people by a short fixed label ("the woman in the yellow raincoat") used identically everywhere.
+- Fewer cuts per block and simpler actions help a model with no reference hold identity.
+
+## Other video models [General best practice]
+
+The craft, the shot logic and the quality gate transfer to any model. The `@ImageN` syntax, omni_reference mode, the 30 s ceiling and the 2 s minimum are tested on Seedance 2.5 only. Ask the user how their tool references images and how long one generation can be, keep the same block structure, and adapt only the syntax and limits.
 
 ## From script to blocks: procedure
 

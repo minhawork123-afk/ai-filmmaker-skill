@@ -23,6 +23,7 @@ These images exist to **lock** identity and space before any video [Tested]. Eve
 - **Always include a realism clause and a camera** [Tested]: a real body and lens, "visible skin texture and pores, no retouching", "NOT a digital render, NOT a 3D visualisation".
 - **Original characters**: add "Original character, not resembling any existing person or public figure" unless the user supplied real photos of a person who has consented.
 - Remove every `[bracket]`, and delete optional lines that don't apply.
+- **Reference sheets always use the studio format** (mid-grey seamless, ARRI Alexa 35, 85mm, softbox), whatever the project's look. Even a phone-shot UGC persona was built from a studio sheet [Tested]. The look comes from the plates and the Style DNA, not the sheet.
 
 ```text
 WEAK    A beautiful young woman with perfect skin and nice hair.
@@ -195,6 +196,8 @@ WHY     Objects with frame positions and a named light become a set the video ca
 
 **Two plates for one space** [Tested pattern]: a wide establishing plate for arrivals, and a tighter plate of the exact corner where the action happens.
 
+**One plate per lighting state** [General best practice]: if the same place appears at night and in the morning, or with the lamp on and off, generate a plate for each. Match their camera position and key elements so only the light changes.
+
 ## Image-prompt checks
 
 - [ ] Aspect ratio and label line above every code block.
@@ -251,6 +254,7 @@ WHY     Camera → subject → action → atmosphere, in sentences, with a tag a
 - Products: *"@Image2 — the [product]. Match exactly: [shape, colour, finish, label]."* [Tested]
 - Locations: *"@Image3 — [space]. Match the [light source], palette and contrast exactly."* [Tested]
 - Blocks 2+: *"@Image[N] — final frame of Block [N-1]. Continue from it exactly."* [Tested]
+- **Scene change** (a new location or a time jump) [General best practice, untested]: the last frame no longer shows the right setting and can drag the old set into the new scene. Either leave it out, or attach it for identity only: *"@Image[N] — final frame of Block [N-1], for @Image1's face and wardrobe only; the setting is now @Image3."* Within a continuous scene, always attach it [Tested].
 
 ```text
 WEAK    Use the reference images for the characters and the place.
@@ -273,6 +277,8 @@ If the look drifts toward CGI, add to the block: *"This must read as actual foot
 ---
 
 ## Output format A — standard block (cinematic, product, drama) [Tested]
+
+The slot numbers below are an example. Use the Bible's @Image map: characters → products → locations → last frame, with no gaps.
 
 Label line: `Seedance 2.5 · omni_reference · [9:16 | 16:9] · Block [N] of [T] · upload @Image1–[K] in order`
 
@@ -327,6 +333,7 @@ PERFORMANCE: [energy as behaviour — e.g. low energy, underselling, talking to 
 0–[X]s · [BEAT]. [Camera setup]. [Name] @Image1 [action]. [She/He] says, [delivery]: "[line]". [Pause or beat.]
 [X]–[Y]s · [BEAT]. Cut. [Camera]. [Hands-only insert / action]. Voiceover, no lip sync: "[line]". [Sounds of the action.]
 [...]
+[Not the final block: END ON THIS FRAME — [pose, frame position, wardrobe state, light].]
 
 VOICE: [voice spec — identical in every block].
 AUDIO: [room tone, action sounds, mic character]. No music.
@@ -337,6 +344,17 @@ Style DNA:
 ```
 
 ---
+
+## Text-only mode — no reference images [General best practice, untested]
+
+Use this when the user can't or won't make reference images. Warn once that identity and location will drift more than with references.
+- Write a **CHARACTER LOCK** line per person (age, face specifics, hair, build, wardrobe, one distinguishing mark with its side) and a **LOCATION LOCK** line per setting. Keep them in the Bible and paste them byte-identical into every block, exactly like the Style DNA.
+- Drop the @Image declarations and the face-source line. Refer to people by a short fixed label ("the woman in the yellow raincoat") used identically everywhere.
+- Fewer cuts per block and simpler actions help a model with no reference hold identity.
+
+## Other video models [General best practice]
+
+The craft, the shot logic and the quality gate transfer to any model. The `@ImageN` syntax, omni_reference mode, the 30 s ceiling and the 2 s minimum are tested on Seedance 2.5 only. Ask the user how their tool references images and how long one generation can be, keep the same block structure, and adapt only the syntax and limits.
 
 ## From script to blocks: procedure
 

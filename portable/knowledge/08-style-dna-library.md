@@ -23,8 +23,9 @@ Shot on [camera body] with [anamorphic / spherical] prime lenses. [Camera moveme
 Rules:
 - Mechanisms only, except the final tone line (up to three words from the brief), which is the one place a mood is allowed.
 - Keep it under about 90 words. Detail that changes per shot belongs in the shots, not the DNA.
-- Persistent weather or atmosphere (continuous rain, mist, water on the lens) goes in the DNA. Momentary events go in shots.
-- Whatever the Style DNA says applies to every shot, so don't put a single-shot instruction in it.
+- **Only what's constant for the whole film goes in.** Because the DNA is pasted into every block, everything in it applies everywhere. Weather and atmosphere belong in it only if the whole film shares them (the tested bleak-exterior preset is one continuous storm). If the light or weather changes between scenes (night storm → calm dawn, apartment → gym), leave them out of the DNA and state them in each block's conditions line and in the plates.
+- **Movement slot = the rule plus its exception** when shots mix styles: "Handheld with subtle micro-shake unless a shot specifies locked-off." A flat "handheld" in the DNA contradicts every locked-off shot.
+- Draft it in Bible v1 so the sheets and plates match the look (the same camera body, palette and grain). Lock it before the first video block.
 
 ```text
 WEAK    Style DNA: dark, moody, cinematic, high quality, realistic.
@@ -122,6 +123,7 @@ Shot on Sony FX6 with a 24–70mm zoom. Handheld observational camera, small ref
 
 - [ ] One preset adapted, not two stacked.
 - [ ] Every slot is a mechanism; only the final tone line holds moods.
-- [ ] Persistent atmosphere is in the DNA; momentary events are in the shots.
+- [ ] Only film-wide constants are in the DNA; scene-specific light and weather are in each block.
+- [ ] Mixed movement styles are written as a rule plus an exception.
 - [ ] It's locked in the Bible and pasted byte-identical into every block.
 - [ ] Its label ([Tested] or [General best practice]) was told to the user.

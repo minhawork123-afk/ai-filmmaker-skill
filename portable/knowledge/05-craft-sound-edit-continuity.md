@@ -113,7 +113,7 @@ WHY     Varying lengths create acceleration and a landing; equal lengths drone.
 | Even observational | 4 / 4 / 3 / 4 | UGC, documentary |
 | Beat-locked (120 BPM) | 4 / 2 / 2 / 4 / 3 | music video, bars of 2 s |
 
-Music videos: at BPM *b*, one bar of 4/4 = 240 ÷ *b* seconds (120 BPM → 2 s, 90 BPM → 2.67 s). Cut on downbeats; save the longest hold for the drop.
+Music videos: at BPM *b*, one bar of 4/4 = 240 ÷ *b* seconds (120 BPM → 2 s, 90 BPM → 2.67 s). Cut on downbeats; save the longest hold for the drop. If the bars don't make a whole number of seconds, round the block up, keep the internal cuts on bar lines, and let the last shot absorb the remainder for trimming.
 
 ## Cut on action [Tested]
 
@@ -220,6 +220,11 @@ Then the next block starts from that end state.
 1. End each block on a described, stable frame: "END ON THIS FRAME — [pose, position in frame, wardrobe state, light]".
 2. After generating, save that frame as a still.
 3. Attach it as the last slot of the next block, and open that block with: "This clip picks up seconds after the previous one."
+4. At a **scene change** (a new location or a time jump), the last frame shows the wrong setting. Leave it out, or attach it for the character's face and wardrobe only and name the new plate as the setting [General best practice, untested].
+
+## Same place, different light
+
+If a location changes time of day or lighting state (lamp on → lamp off, night → morning), generate a **separate plate for each lighting state** and give each its own @Image slot [General best practice]. The plate's light becomes the video's light, so one night plate can't be asked to play morning.
 
 ## Screen direction and geography
 

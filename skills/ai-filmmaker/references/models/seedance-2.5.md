@@ -17,6 +17,8 @@ ByteDance's video model, used in this workflow on **OpenArt** in **omni_referenc
 
 Setting names and options can differ on other platforms that host Seedance. Ask the user what their interface shows rather than assuming.
 
+[General best practice] For a 2.39:1 "scope" look, generate 16:9 and letterbox in the edit; frame important action inside the central band. If the duration setting only takes whole seconds, make the block a whole number of seconds and let the final shot absorb any remainder.
+
 ## Limits and timing [Tested]
 
 - 30 s maximum per block; target 12–20 s.
@@ -31,7 +33,7 @@ Setting names and options can differ on other platforms that host Seedance. Ask 
 - Never change the upload order across generations. If the order changes, the wrong reference gets the wrong role.
 - Order rule: characters → products → locations → the final frame of the previous block (blocks 2+). Numbered without gaps and fixed for the project.
 - Character sheets with a headless centre panel give the model exactly one face to lock onto. Two full faces get averaged into a blurred identity.
-- Attaching the previous block's final frame from Block 2 onward is the main defence against face and location drift.
+- Attaching the previous block's final frame from Block 2 onward is the main defence against face and location drift, within a continuous scene. At a scene change (new location or time jump), see `translation/video-prompts.md` [General best practice].
 
 Public reports say Seedance 2.5 accepts up to about 30 reference images in one generation, plus video and audio references [General best practice: public spec, not tested here]. In this workflow, projects used up to 6 image slots.
 

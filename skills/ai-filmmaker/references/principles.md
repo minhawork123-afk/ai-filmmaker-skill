@@ -95,8 +95,9 @@ Run this before every handoff. Fix silently, then report (see the end of this fi
 
 ### Video blocks
 - [ ] The block header shows its number, time range and beat name.
-- [ ] Every @Image slot used is declared at the top of the block, in Bible order. Blocks 2+ attach the previous block's last frame.
+- [ ] Every @Image slot used is declared at the top of the block, in Bible order. Blocks 2+ attach the previous block's last frame (or, at a scene change, leave it out or attach it for identity only).
 - [ ] Character sheets carry the instruction to take the face from the portrait panel; the centre panel omits the head deliberately.
+- [ ] Every setting the block shows has a plate in the @Image map. If one is missing, write the plate prompt or list it under `Needs you:`.
 - [ ] Persistent conditions are stated: dialogue/no dialogue, weather, time of day.
 - [ ] LEFT/RIGHT facts are stated in capitals.
 - [ ] Every shot reads in this order: camera (position, lens, movement) → subject (@ImageN) → physical action → atmosphere. Audio is an `Audio:` line per shot (standard format) or a global `AUDIO:` section with synced sounds written into the shots (UGC format).
@@ -106,7 +107,8 @@ Run this before every handoff. Fix silently, then report (see the end of this fi
 - [ ] Sustained poses have a duration; involuntary motion has a mechanism; likely mistakes are named inline ("does not throw it").
 - [ ] No on-camera line overlaps movement, and voiceover is labelled "Voiceover, no lip sync".
 - [ ] Audio lines name specific sounds with timing, never "ambient sound".
-- [ ] The Style DNA is the last section, byte-identical to the Bible.
+- [ ] The Style DNA is the last section, byte-identical to the Bible, and holds only film-wide constants (scene light and weather go in the block's conditions line).
+- [ ] Text-only mode (no references): CHARACTER LOCK and LOCATION LOCK lines are pasted byte-identical, and the drift warning was given once.
 - [ ] No interior states and no mood words in shot lines.
 
 ### Output

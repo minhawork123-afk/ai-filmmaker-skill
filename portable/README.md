@@ -4,7 +4,7 @@ Use this folder where Agent Skills aren't available, or where you'd rather confi
 
 | File | What it is |
 |---|---|
-| `SYSTEM_PROMPT.md` | The director logic, condensed to about 6,100 characters (under the 8,000-character Custom GPT limit) |
+| `SYSTEM_PROMPT.md` | The director logic, condensed to about 6,800 characters (under the 8,000-character Custom GPT limit) |
 | `knowledge/` | 10 files, 00–09, covering the whole skill. Upload all of them |
 | `ai-filmmaker-full.md` | Everything in one file, for pasting into a large-context LLM |
 
