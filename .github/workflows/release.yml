@@ -1,0 +1,48 @@
+name: Release
+
+# Push a tag like v1.0.0 to build ai-filmmaker.zip (for Claude.ai, ChatGPT Skills and
+# the Gemini app) plus the portable bundle, and attach both to the GitHub release.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tag matches plugin version
+        run: |
+          want="$(python3 -c "import json;print(json.load(open('.claude-plugin/plugin.json'))['version'])")"
+          if [ "${GITHUB_REF_NAME#v}" != "$want" ]; then
+            echo "Tag ${GITHUB_REF_NAME} does not match plugin.json version ${want}" >&2
+            exit 1
+          fi
+
+      - name: Checks
+        run: |
+          python3 build/check_skill.py
+          python3 -m unittest discover -s tests
+          python3 build/build_portable.py --check
+
+      - name: Build zips
+        run: bash build/package_skill.sh
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" dist/ai-filmmaker.zip dist/ai-filmmaker-portable.zip --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" dist/ai-filmmaker.zip dist/ai-filmmaker-portable.zip \
+              --title "AI Filmmaker $GITHUB_REF_NAME" --generate-notes
+          fi
