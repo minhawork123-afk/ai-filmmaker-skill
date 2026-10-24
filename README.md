@@ -130,6 +130,7 @@ gemini-extension.json             Gemini CLI extension manifest
 portable/                         system prompt + 10 knowledge files for GPTs, Gems, any LLM
 showcase/                         the real productions: assets and prompts, for humans only
 tools/                            Character Sheet Builder + launch film (single HTML files)
+docs/self-test.md                 how the skill was self-tested, and what that fixed
 build/  tests/  .github/          packaging, checks, CI and release
 ```
 
