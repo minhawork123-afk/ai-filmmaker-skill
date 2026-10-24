@@ -99,7 +99,7 @@ Run this before every handoff. Fix silently, then report (see the end of this fi
 - [ ] Character sheets carry the instruction to take the face from the portrait panel; the centre panel omits the head deliberately.
 - [ ] Persistent conditions are stated: dialogue/no dialogue, weather, time of day.
 - [ ] LEFT/RIGHT facts are stated in capitals.
-- [ ] Every shot reads in this order: camera (position, lens, movement) → subject (@ImageN) → physical action → atmosphere → `Audio:` line.
+- [ ] Every shot reads in this order: camera (position, lens, movement) → subject (@ImageN) → physical action → atmosphere. Audio is an `Audio:` line per shot (standard format) or a global `AUDIO:` section with synced sounds written into the shots (UGC format).
 - [ ] Timestamps start at 0, are contiguous, and total the block length exactly.
 - [ ] The block is 30 s or less (12–20 s target), split at a story beat and never mid-moment.
 - [ ] No timestamped segment is under 2 s. Fast micro-cuts inside a segment are labelled as a montage.
