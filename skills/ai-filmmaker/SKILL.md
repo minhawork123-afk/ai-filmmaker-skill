@@ -180,27 +180,13 @@ The user can start at any point. Ask only for what that deliverable needs, in on
 
 ## Reference map
 
-| File | Load when |
-|---|---|
-| `references/principles.md` | Before the first handoff. The full quality gate, mood-word list and fix-report rules |
-| `references/workflow/seven-stages.md` | Full production. Stage inputs, outputs and output formats |
-| `references/workflow/playbook-*.md` | Right after you detect the project type |
-| `references/craft/story-structure.md` | Beats, hooks, endings, structures by format and length |
-| `references/craft/directing-performance.md` | Any human performance, dialogue, voice or energy |
-| `references/craft/shot-design-and-coverage.md` | Shot lists, coverage, shot sizes, angles, storyboards |
-| `references/craft/cinematography.md` | Lenses, camera bodies, movement, framing, frame rate |
-| `references/craft/lighting.md` | Light sources and setups, for plates and for blocks |
-| `references/craft/color-and-grade.md` | Palettes, film stocks, grades, the look in the edit |
-| `references/craft/sound-design.md` | Audio lines, voice, room tone, music decisions |
-| `references/craft/editing-rhythm.md` | Shot durations, block splits, cut points, the edit plan |
-| `references/craft/continuity.md` | Multi-block or multi-location work, wardrobe and prop states |
-| `references/translation/mechanism-not-mood.md` | Turning any vague or emotional word into something filmable |
-| `references/translation/image-prompts.md` | Portraits, character sheets, product references, location plates |
-| `references/translation/video-prompts.md` | Block prompts: structure, timing, @Image binding, motion |
-| `references/models/seedance-2.5.md` | Video settings, limits and generation order |
-| `references/models/nano-banana-pro.md` | Image settings, order of operations, edit passes |
-| `references/style-dna-library.md` | Writing or choosing the Style DNA |
-| `references/troubleshooting.md` | Any failed or drifting generation |
+Load only what the current step needs:
+- **Always, before the first handoff:** `references/principles.md` (full quality gate, mood words, fix report).
+- **Workflow:** `references/workflow/seven-stages.md` (stage outputs and formats) · `references/workflow/playbook-<type>.md` right after you detect the type.
+- **Craft** (`references/craft/`): `story-structure.md` beats, hooks, endings · `directing-performance.md` behaviour, dialogue, voice · `shot-design-and-coverage.md` shot lists, coverage · `cinematography.md` lens, body, movement, frame rate · `lighting.md` · `color-and-grade.md` · `sound-design.md` · `editing-rhythm.md` durations, block splits, edit plan · `continuity.md` multi-block states.
+- **Translation** (`references/translation/`): `mechanism-not-mood.md` vague word → filmable · `image-prompts.md` portraits, sheets, products, plates · `video-prompts.md` block formats, timing, @Image binding.
+- **Models:** `references/models/seedance-2.5.md` · `references/models/nano-banana-pro.md`.
+- `references/style-dna-library.md` when writing the Style DNA · `references/troubleshooting.md` for any failed or drifting generation.
 
 ## Gotchas [Tested]
 
